@@ -32,7 +32,7 @@ $ fin d'une ligne
 
 \0 \1 \2 ... \9 désigne le résultat d'un groupe du motif de recherche
 
-\0 motif lui-même entier
+\0 motif lui-même **entier**
 
 () groupe pour stocker en mémoire
 
@@ -50,8 +50,16 @@ a{2} : deux fois a -> aa
 
 a{2,4} : aa ou aaa ou aaaa
 
-a(bc)      \1 -> premier groupe -> bc
+a(bc) &nbsp;  \1 -> premier groupe -> bc
 
-(a(bc))(de)      \1 -> abc  \2 -> bc \3 -> de
+(a(bc))(de) &nbsp;  \1 -> abc  \2 -> bc \3 -> de
 
 ^(.) : premier caractère en début de ligne
+
+# Notepad++
+
+* ctrl H : fenêtre de remplacement
+
+* plugin RegEx Helper : https://nppregexhelper.sourceforge.net ou depuis le plugin manager (compléments puis plugin manager)
+
+* recherche dans les fichiers d'un dossier 
