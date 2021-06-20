@@ -26,9 +26,9 @@ Majuscule: inverse quand c'est un ensemble
 
 $ fin d'une ligne
 
-\< début d'un mot
+\\< début d'un mot
 
-\> fin d'un mot
+\\> fin d'un mot
 
 \0 \1 \2 ... \9 désigne le résultat d'un groupe du motif de recherche
 
