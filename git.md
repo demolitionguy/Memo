@@ -68,4 +68,6 @@ git checkout -b \<nom\>
 ## Renommer une branche  
 git branch -m (pour move, comme mv) \<vieux nom\> \<nouveau nom\>.  
 Si on veut remplacer la branche actuelle: git branch -m \<nouveau nom\>  
+<img src="https://user-images.githubusercontent.com/16964230/124143639-93ce1d00-da8b-11eb-9e21-3c5732e11ddb.jpg" width="250" height="250">
+
 
