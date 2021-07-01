@@ -13,3 +13,19 @@ Vlan: 1 domaine de broadcast.
 1 Vlan <-> 1 sous-réseau IP dédié. Les pc des Vlan doivent être dans le même plan d'adressage IP!  
 PVID: Port Vlan IDentifier.  
 PVID d'un port du switch: numéro (identifiant) Vlan qui sera associé à toute trame entrante sur le switch par ce port.
+
+# Masques de sous-réseau
+
+11111111.11111111.11111111.00000000
+<--------réseau----------><machine>
+  
+Masque en décimal: 255.255.255.0  
+  
+192.168.25.0 réservé pour le réseau  
+192.168.25.255 réservé pour le broadcast  
+Il reste 254 possibilités pour les machines.  
+  
+Exemple:  
+Masque: 255.255.255.248 (248 = 11111 000 , les 11111 sont pour la partie réseau)  
+Réseau 192.168.25.32 avec ce masque
+  
