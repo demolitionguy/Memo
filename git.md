@@ -22,7 +22,9 @@ git branch -d / git branch -D
 git add .  
 git ignore  
 ## Pour commiter une portion de fichier seulement  
-git add -p fichier (ou git add --patch fichier) puis e pour éditer à la main. Le mot est **hunk** ou **patch**.  
+* git add -p fichier (ou git add --patch fichier) puis e pour éditer à la main. Le mot est **hunk** ou **patch**.  
+* git add --patch \<filename\>  
+? pour l'aide
 ## Pour faire plusieurs commits à partir d'un seul  
 * reset et commiter les changements voulus. Et git rebase -i
 * git show commit
@@ -78,7 +80,8 @@ git config --global alias.rename 'branch -m'
 
 # Merger
 
-git merge  
+Se placer sur la branche master puis git merge correctif  
+Résolution des conflits puis git status puis **git commit**  
 
 # Gérer le dépôt et les branches distantes  
 
@@ -94,7 +97,12 @@ git push fait en plus le merge de cette branche origin/... sur ma branche locale
 Fetch ne change rien à mon répertoire de travail. Il permet d'inspecter origin/..., la met à jour par rapport à ce qu'il y a sur le dépôt.  
 git branch -avv pour voir les branches locales et distantes.  
 ## Pour pousser une branche spécifique:  
-git push \<remote\> \<branch\> 
+git push \<remote\> \<branch\>  
+git push \<depot remote\> \<branche locale\> \<branche distante\>  
+## Voir les branches locales et distantes (sans les détails)  
+git branch --all  
+## Voir le lien entre les branches locales et distantes
+git remote show origin 
 
 # Rattraper les erreurs
 
