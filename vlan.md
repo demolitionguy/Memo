@@ -16,8 +16,8 @@ PVID d'un port du switch: numéro (identifiant) Vlan qui sera associé à toute 
 
 # Masques de sous-réseau
 
-11111111.11111111.11111111.00000000
-<--------réseau----------><machine>
+11111111.11111111.11111111.00000000  
+\<----------réseau------------\>\<machine\>
   
 Masque en décimal: 255.255.255.0  
   
