@@ -8,6 +8,10 @@ Pour créer un alias: git config --global alias.rename 'branch -m'
 
 # Commiter
 
+gitignore  
+git add . (stage les nouveaux fichiers et les modifications; **pas** les suppressions) 
+git add -u (stage les modifications et les suppressions; **pas** les nouveaux fichiers)  
+git add -A (stage tous les changements). git add -A <=> git add . + git add -u  
 git commit -m  
 git cherry-pick commit  
 git diff  
@@ -69,6 +73,12 @@ git checkout -b \<nom\>
 git branch -m (pour move, comme mv) \<vieux nom\> \<nouveau nom\>.  
 Si on veut remplacer la branche actuelle: git branch -m \<nouveau nom\>  
 <img src="https://user-images.githubusercontent.com/16964230/124143639-93ce1d00-da8b-11eb-9e21-3c5732e11ddb.jpg" width="250" height="250">
+## Pour créer un alias
+git config --global alias.rename 'branch -m'
+
+# Merger
+
+git merge  
 
 # Gérer le dépôt et les branches distantes  
 
@@ -77,10 +87,11 @@ git remote rename origin zoubida
 git remote show origin  
 git fetch: récupère les branches distantes. Ne change pas l'espace de travail. Ajouter un fichier sur une branche distante sur Github pour tester. Sans git fetch: git log origin/test n'affiche que les commits de la branche déjà sur le pc. Git fetch pour récupérer les commits à jour du dépôt.  
 ## Pour supprimer, sur le pc, la branche distante  
-git branch -d -r origin/branch . Faut pusher pour que ce soit pris en compte sur le dépôt (vérifier la syntaxe).  
+git branch -d **-r** origin/branch . Faut pusher pour que ce soit pris en compte sur le dépôt (vérifier la syntaxe).  
 ## Pour mettre à jour la branch origin/... sur mon pc local :  
 git fetch  
-git push fait en plus le merge de cette branche origin/... sur ma branche locale. Fetch ne change rien à mon répertoire de travail. Il permet d'inspecter origin/..., la met à jour par rapport à ce qu'il y a sur le dépôt.  
+git push fait en plus le merge de cette branche origin/... sur ma branche locale.  
+Fetch ne change rien à mon répertoire de travail. Il permet d'inspecter origin/..., la met à jour par rapport à ce qu'il y a sur le dépôt.  
 git branch -avv pour voir les branches locales et distantes.  
 ## Pour pousser une branche spécifique:  
 git push \<remote\> \<branch\> 
