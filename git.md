@@ -6,6 +6,10 @@ git status
 git config  
 Pour créer un alias: git config --global alias.rename 'branch -m'
 
+# Créer une branche
+
+git branch \<nouvelle branche\>
+
 # Commiter
 
 gitignore  
