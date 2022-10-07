@@ -62,6 +62,10 @@ git log --graph --pretty=oneline --all
 gitrevisions : git log master..origin/master (affiche les commits dans cette plage, le range)  
 git show commit pour voir les détails d'un commit particulier 
 
+# Différences
+
+git diff --color --word-diff=plain
+
 # Gérer les branches
 
 git branch -av(v)  
